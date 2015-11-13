@@ -1,8 +1,7 @@
 (TeX-add-style-hook
  "backup"
  (lambda ()
-   (LaTeX-add-labels
-    "trfix")
+   (LaTeX-add-labels)
    (LaTeX-add-counters
     "finalframe")))
 
