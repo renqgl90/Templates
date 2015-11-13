@@ -1,0 +1,72 @@
+ \documentclass[10pt]{beamer}
+  \usepackage{ucs}
+  \usepackage[utf8x]{inputenc}
+  \usepackage[italian]{babel}
+  \usepackage{fontenc}
+  \usepackage{graphicx}
+  \usepackage{array}
+  \usepackage{srcltx}
+  \usepackage{amsmath}
+  \usepackage{amsfonts}
+  \usepackage{amssymb}
+  \usepackage{latexsym}
+  \usepackage{graphics}
+  \usepackage{xspace}
+  \usepackage{hyperref}
+  \usepackage{tabularx}
+  \usepackage{url}
+  \usepackage{listings}
+  \usepackage{color}
+  \usepackage{multicol}
+  \usepackage{ifthen} % for conditional statements
+\newboolean{inbibliography}
+\setboolean{inbibliography}{false} %
+\usepackage{graphics,epsfig, subfigure}
+
+%\include{symbols-def}  % you can define your symbols here
+
+
+\definecolor{kugreen}{RGB}{20,93,61}
+\definecolor{kugreenlys}{RGB}{150,152,129}
+\definecolor{kugreenlyslys}{RGB}{173,190,121}
+\definecolor{kugreenlyslyslys}{RGB}{214,223,90}
+\setbeamercovered{transparent}
+\mode<presentation>
+{  \usetheme{PaloAlto}
+  \usecolortheme[named=kugreen]{structure}
+  \useinnertheme{circles}
+  \usefonttheme[onlymath]{serif}
+  \setbeamercovered{transparent}
+  \setbeamertemplate{blocks}[rounded][shadow=true]
+}
+
+%\setbeamertemplate{background}{\includegraphics[width=1\textwidth]{natfak_baggrund.pdf}}
+\logo{\includegraphics[width=1.5cm]{./logos/LaL.jpg}}
+\title{Title of the presentation}
+\subtitle{Name of the presentation occasion}
+%\titlegraphic{\pgfuseimage{logo}}
+\author[R. Quagliani]{Renato Quagliani}
+\institute[\textbf{LAL Orsay}]{\textbf{LaL Orsay}\\
+Bristol University}
+\date{\today}
+
+\newcommand{\lhcb}{LHC\textnormal{b} }
+\begin{document}
+\frame{\titlepage \vspace{-0.5cm}
+
+\textbf{Supervisors}: Patrick Robbe , Jonas Rademacker , Yasmine Ahmis
+
+%\includegraphics[height=0.25\textheight]{immagini/geometry1.eps}
+ }
+\input{slides}
+
+\begin{frame}
+  \frametitle{References}
+  \setboolean{inbibliography}{true}
+  \bibliographystyle{plain}
+  \bibliography{main}
+  %\small\bibliography{main}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{document}
+\end{document}
